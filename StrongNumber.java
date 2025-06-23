@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Prime
+class StrongNumber
 {
         public static void main(String[] args) 
         {
