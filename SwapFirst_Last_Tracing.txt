@@ -1,0 +1,22 @@
+*Tracing of Swap first and last digit
+Input: num = 12345
+
+Calculations:
+
+temp = 12345
+ld = 12345 % 10 = 5 (last digit)
+count = (int) Math.log10(12345) = 4 (since is the largest power of 10 less than 12345)
+
+first = (int) (12345 / Math.pow(10, 4)) = (int) (12345 / 10000) = 1 (first digit)
+last = (int) (12345 % Math.pow(10, 4)) = (int) (12345 % 10000) = 2345
+last = 2345 / 10 = 234 (removing the last digit)
+
+Swapping:
+
+swap = (int) (5 * Math.pow(10, 4) + 234 * 10 + 1)
+swap = (int) (50000 + 2340 + 1) = 52341
+
+Output:
+
+System.out.println(temp); prints 12345
+System.out.println(swap); prints 52341
